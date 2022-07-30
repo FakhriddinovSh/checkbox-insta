@@ -1,0 +1,36 @@
+.checkbox{
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 260px;
+}
+
+.form-label{
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.form-input{
+    position: absolute;
+    transform: scale(0);
+}
+
+.form-input:checked ~ .form-checkbox{
+    transform: rotate(45deg);
+    width: 20px;
+    margin-left: 16px;
+    border-color: #24c78e;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.form-checkbox{
+    display: block;
+    width: inherit;
+    height: inherit;
+    border: 3px solid #434343;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
